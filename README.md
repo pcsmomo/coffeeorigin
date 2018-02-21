@@ -11,3 +11,5 @@ heroku apps:create jethrocoffeeorigin
 git remote add heroku https://git.heroku.com/jethrocoffeeorigin.git
 -> fatal: remote heroku already exists.
 git push heroku master
+
+npm install --save nodemon
