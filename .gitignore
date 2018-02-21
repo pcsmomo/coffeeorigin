@@ -4,3 +4,6 @@ node_modules
 
 # documents files for reference
 doc
+
+# keys for development environment
+dev.js
