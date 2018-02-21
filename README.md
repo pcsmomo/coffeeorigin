@@ -13,3 +13,4 @@ git remote add heroku https://git.heroku.com/jethrocoffeeorigin.git
 git push heroku master
 
 npm install --save nodemon
+npm install --save mongoose
