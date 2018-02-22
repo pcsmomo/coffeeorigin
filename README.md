@@ -17,3 +17,5 @@ npm install --save mongoose
 
 //npm install -g create-react-app
 create-react-app client
+
+npm install --save concurrently
