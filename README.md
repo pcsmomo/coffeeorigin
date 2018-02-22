@@ -14,3 +14,6 @@ git push heroku master
 
 npm install --save nodemon
 npm install --save mongoose
+
+//npm install -g create-react-app
+create-react-app client
