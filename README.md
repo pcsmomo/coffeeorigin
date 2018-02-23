@@ -19,3 +19,6 @@ npm install --save mongoose
 create-react-app client
 
 npm install --save concurrently
+
+// setup mongodb on local
+https://treehouse.github.io/installation-guides/mac/mongo-mac.html
