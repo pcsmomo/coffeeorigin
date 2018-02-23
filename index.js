@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const keys = require("./config/keys");
 require("./models/Country");
-require("./models/Coffee");
+require("./models/Origin");
 
 mongoose.connect(keys.mongoURI);
 

@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
-const Coffee = mongoose.model("coffees");
+const Origin = mongoose.model("origins");
 
 module.exports = app => {
-  app.get("/api/coffees/", async (req, res) => {
-    const coffees = await Coffee.find({ current: "o" }).sort({ order: 1 });
+  app.get("/api/origins/", async (req, res) => {
+    const origins = await Origin.find({ current: true }).sort({ order: 1 });
 
-    res.send(coffees);
+    res.send(origins);
   });
 };
