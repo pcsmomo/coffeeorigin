@@ -2,6 +2,12 @@ cd /Users/momo/Documents/Study/reactjs/prj/coffeeorigin/client
 
 npm install --save redux react-redux react-router-dom
 
+// Using Pre-processors Scss and Sass with Create-React-App
+https://www.youtube.com/watch?v=2QaI5ajg4Hw
+npm install --save-dev node-sass-chokidar
+npm install --save-dev npm-run-all
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

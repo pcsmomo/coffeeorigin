@@ -3,6 +3,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Coffee from "./coffee";
 import CoffeeList from "./coffee/list";
 
+import "../styles/css/App.css";
+
 class App extends Component {
   render() {
     return (
