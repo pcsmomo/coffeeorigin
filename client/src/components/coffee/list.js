@@ -2,19 +2,16 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchOrigins } from "../../actions";
 
+import Origin from "./origin";
+
 class List extends Component {
   componentDidMount() {
     this.props.fetchOrigins();
   }
 
   renderOrigins() {
-    return Array.prototype.map.call(this.props.origins, ori => {
-      return (
-        <div key={ori.oid}>
-          <div>{ori.name}</div>
-          <div>{ori.origin}</div>
-        </div>
-      );
+    return Array.prototype.map.call(this.props.origins, origin => {
+      return <Origin origin={origin} key={origin.cid} />;
     });
   }
 
