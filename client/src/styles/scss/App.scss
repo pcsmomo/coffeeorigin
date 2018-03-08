@@ -1,13 +1,49 @@
+$screen-width: 1010px;
+$screen-height: 735px;
+$bgcolor: #a1acb7;
+
 .container {
+  width: $screen-width;
+  overflow: hidden;
+}
+
+#list {
+  width: $screen-width * 2;
+  overflow: hidden;
+  animation: slide 9s infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  37% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: -$screen-width;
+  }
+  87% {
+    margin-left: -$screen-width;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+#list > * {
+  float: left;
 }
 
 .coffeeInfo {
-  background-color: lightgreen;
-  width: 1024px;
-  height: 768px;
+  width: $screen-width;
+  height: $screen-height;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 45% 1% 54%;
   text-align: center;
+  font-family: "Lucida Bright", serif;
+  text-shadow: 3px 3px 2px rgba(120, 120, 120, 1);
+  border-radius: 50px;
 
   .firstDiv {
     display: grid;
@@ -16,6 +52,7 @@
     height: inherit;
 
     .name {
+      align-self: center;
       font-size: 2em;
     }
     .map {
@@ -24,19 +61,52 @@
     }
   }
 
+  .divider {
+    width: 5px;
+    height: 80%;
+    background-color: black;
+    align-self: center;
+  }
+
   .secondDiv {
     display: grid;
-    grid-template-rows: 28% 24% 24% 24%;
-    padding: 50px 0;
-    border-left: 20px solid lightblue;
+    grid-template-rows: 34% 22% 22% 22%;
+    padding: 100px 0;
     font-size: 1.8em;
     text-transform: capitalize;
+    text-align: left;
     * {
-      padding: 30px 10px;
+      padding: 30px 50px 0;
+    }
+    .flavorNotes {
+      text-align: center;
     }
   }
 }
 
-.coffeeInfo:nth-child(2) {
-  display: none;
+.weave {
+  background: linear-gradient(
+      135deg,
+      $bgcolor 22px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        $bgcolor 22px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )0 64px;
+  background-color: $bgcolor;
+  background-size: 64px 128px;
 }

@@ -16,7 +16,7 @@ class List extends Component {
   }
 
   render() {
-    return <div>{this.renderOrigins()}</div>;
+    return <div id="list">{this.renderOrigins()}</div>;
   }
 }
 
