@@ -11,7 +11,7 @@ class List extends Component {
 
   renderOrigins() {
     return Array.prototype.map.call(this.props.origins, origin => {
-      return <Origin origin={origin} key={origin.cid} />;
+      return <Origin origin={origin} key={origin.oid} />;
     });
   }
 
