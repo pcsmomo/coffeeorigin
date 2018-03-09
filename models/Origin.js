@@ -3,8 +3,8 @@ const { Schema } = mongoose;
 
 const originSchema = new Schema({
   oid: String,
-  ccd: String,
-  name: String,
+  ccode: String,
+  oname: String,
   use: String,
   flavorNotes: String,
   description: String,
