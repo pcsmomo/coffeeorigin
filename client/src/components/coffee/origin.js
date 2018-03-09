@@ -5,8 +5,21 @@ class Origin extends Component {
   componentDidMount() {
     // jQuery problem solved.
     // https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#using-global-variables
+
     const $ = window.$;
     const el = ReactDom.findDOMNode(this.display);
+
+    let countryColor = {};
+    let ccode = this.props.country.ccode;
+    countryColor[ccode] = "red";
+
+    let countryLocation = {
+      scale: this.props.country.scale,
+      lat: this.props.country.latitude,
+      lng: this.props.country.longitude,
+      animate: true
+    };
+
     $(el)
       .vectorMap({
         map: "world_mill_en",
@@ -17,19 +30,12 @@ class Origin extends Component {
                 red: "#ff0000"
               },
               attribute: "fill",
-              values: {
-                NI: "red"
-              }
+              values: countryColor
             }
           ]
         }
       })
-      .vectorMap("set", "focus", {
-        scale: 4,
-        lat: 12.865416,
-        lng: -85.207229,
-        animate: true
-      });
+      .vectorMap("set", "focus", countryLocation);
   }
 
   render() {
