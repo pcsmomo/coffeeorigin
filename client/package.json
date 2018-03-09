@@ -5,6 +5,9 @@
   "proxy": {
     "/api/origins": {
       "target": "http://localhost:4040"
+    },
+    "/api/countries": {
+      "target": "http://localhost:4040"
     }
   },
   "dependencies": {
@@ -19,7 +22,8 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/scss -o src/styles/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",

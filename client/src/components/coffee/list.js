@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchOrigins } from "../../actions";
+import { fetchOrigins, fetchCountries } from "../../actions";
 
 import Origin from "./origin";
 
 class List extends Component {
   componentDidMount() {
     this.props.fetchOrigins();
+    this.props.fetchCountries();
   }
 
   renderOrigins() {
     return Array.prototype.map.call(this.props.origins, origin => {
-      return <Origin origin={origin} key={origin.oid} />;
+      return <Origin key={origin.oid} origin={origin} />;
     });
   }
 
@@ -20,14 +21,17 @@ class List extends Component {
   }
 }
 
-const mapStateToProps = ({ origins }) => {
-  return { origins };
+const mapStateToProps = ({ origins, countries }) => {
+  return { origins, countries };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     fetchOrigins: () => {
       dispatch(fetchOrigins());
+    },
+    fetchCountries: () => {
+      dispatch(fetchCountries());
     }
   };
 };
