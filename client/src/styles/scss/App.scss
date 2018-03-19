@@ -5,26 +5,35 @@ $bgcolor: #a1acb7;
 .container {
   width: $screen-width;
   overflow: hidden;
+  border-radius: 50px;
 }
 
 #list {
-  width: $screen-width * 2;
+  width: $screen-width * 3;
   overflow: hidden;
-  animation: slide 9s infinite;
+  /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+  // margin-left: -($screen-width * 2);
+  animation: slide 13s infinite;
 }
 
 @keyframes slide {
   0% {
     margin-left: 0px;
   }
-  37% {
+  28% {
     margin-left: 0px;
   }
-  50% {
-    margin-left: -$screen-width;
+  33% {
+    margin-left: -($screen-width);
   }
-  87% {
-    margin-left: -$screen-width;
+  61% {
+    margin-left: -($screen-width);
+  }
+  66% {
+    margin-left: -($screen-width * 2);
+  }
+  95% {
+    margin-left: -($screen-width * 2);
   }
   100% {
     margin-left: 0px;
@@ -43,7 +52,6 @@ $bgcolor: #a1acb7;
   text-align: center;
   font-family: "Lucida Bright", serif;
   text-shadow: 3px 3px 2px rgba(120, 120, 120, 1);
-  border-radius: 50px;
 
   .firstDiv {
     display: grid;
@@ -53,7 +61,11 @@ $bgcolor: #a1acb7;
 
     .name {
       align-self: center;
-      font-size: 2em;
+      font-size: 2rem;
+
+      span {
+        font-size: 1.6rem;
+      }
     }
     .map {
       width: 100%;
@@ -72,7 +84,7 @@ $bgcolor: #a1acb7;
     display: grid;
     grid-template-rows: 34% 22% 22% 22%;
     padding: 100px 0;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-transform: capitalize;
     text-align: left;
     * {
@@ -84,6 +96,7 @@ $bgcolor: #a1acb7;
   }
 }
 
+// http://lea.verou.me/css3patterns/
 .weave {
   background: linear-gradient(
       135deg,
@@ -109,4 +122,35 @@ $bgcolor: #a1acb7;
       )0 64px;
   background-color: $bgcolor;
   background-size: 64px 128px;
+}
+
+.shippo {
+  background-color: #def;
+  background-image: radial-gradient(
+      closest-side,
+      transparent 98%,
+      rgba(0, 0, 0, 0.3) 99%
+    ),
+    radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, 0.3) 99%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.starryNight {
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  color: lightgray;
 }

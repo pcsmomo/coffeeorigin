@@ -1,4 +1,7 @@
 cd /Users/momo/Documents/Study/reactjs/prj/coffeeorigin
+mongod
+npm dev run
+
 
 npm init
 Enter Enter Enter Enter ...

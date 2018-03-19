@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { fetchOrigins, fetchCountries } from "../../actions";
 
 import Origin from "./origin";
+import Blend from "./blend";
 
 class List extends Component {
   componentDidMount() {
@@ -29,7 +30,12 @@ class List extends Component {
   }
 
   render() {
-    return <div id="list">{this.renderOrigins()}</div>;
+    return (
+      <div id="list">
+        {this.renderOrigins()}
+        <Blend />
+      </div>
+    );
   }
 }
 
