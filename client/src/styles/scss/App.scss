@@ -4,6 +4,7 @@ $bgcolor: #a1acb7;
 
 .container {
   width: $screen-width;
+  height: $screen-height;
   overflow: hidden;
   border-radius: 50px;
 }
@@ -13,34 +14,31 @@ $bgcolor: #a1acb7;
 }
 
 #list {
-  width: $screen-width * 3;
+  height: $screen-height * 3;
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
   // margin-left: -($screen-width * 2);
-  animation: slide 13s infinite;
+  animation: slide 13s infinite alternate;
 }
 
 @keyframes slide {
   0% {
-    margin-left: 0px;
+    margin-top: 0px;
   }
-  28% {
-    margin-left: 0px;
+  30% {
+    margin-top: 0px;
   }
-  33% {
-    margin-left: -($screen-width);
+  35% {
+    margin-top: -($screen-height);
   }
-  61% {
-    margin-left: -($screen-width);
+  65% {
+    margin-top: -($screen-height);
   }
-  66% {
-    margin-left: -($screen-width * 2);
-  }
-  95% {
-    margin-left: -($screen-width * 2);
+  70% {
+    margin-top: -($screen-height * 2);
   }
   100% {
-    margin-left: 0px;
+    margin-top: -($screen-height * 2);
   }
 }
 

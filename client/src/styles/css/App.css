@@ -1,5 +1,6 @@
 .container {
   width: 1010px;
+  height: 735px;
   overflow: hidden;
   border-radius: 50px; }
 
@@ -7,26 +8,24 @@
   padding: 50px; }
 
 #list {
-  width: 3030px;
+  height: 2205px;
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
-  animation: slide 13s infinite; }
+  animation: slide 13s infinite alternate; }
 
 @keyframes slide {
   0% {
-    margin-left: 0px; }
-  28% {
-    margin-left: 0px; }
-  33% {
-    margin-left: -1010px; }
-  61% {
-    margin-left: -1010px; }
-  66% {
-    margin-left: -2020px; }
-  95% {
-    margin-left: -2020px; }
+    margin-top: 0px; }
+  30% {
+    margin-top: 0px; }
+  35% {
+    margin-top: -735px; }
+  65% {
+    margin-top: -735px; }
+  70% {
+    margin-top: -1470px; }
   100% {
-    margin-left: 0px; } }
+    margin-top: -1470px; } }
 
 #list > * {
   float: left; }
