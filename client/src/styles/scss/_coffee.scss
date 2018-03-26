@@ -1,0 +1,49 @@
+.coffeeInfo {
+  display: grid;
+  grid-template-columns: 45% 1% 54%;
+  text-align: center;
+  font-family: "Lucida Bright", serif;
+  text-shadow: 3px 3px 2px rgba(120, 120, 120, 1);
+
+  .firstDiv {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    padding: 20px;
+    height: inherit;
+
+    .name {
+      align-self: center;
+      font-size: 2rem;
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+    .map {
+      width: 100%;
+      height: 85%;
+    }
+  }
+
+  .divider {
+    width: 5px;
+    height: 80%;
+    background-color: black;
+    align-self: center;
+  }
+
+  .secondDiv {
+    display: grid;
+    grid-template-rows: 34% 22% 22% 22%;
+    padding: 100px 0;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: left;
+    * {
+      padding: 30px 50px 0;
+    }
+    .flavorNotes {
+      text-align: center;
+    }
+  }
+}

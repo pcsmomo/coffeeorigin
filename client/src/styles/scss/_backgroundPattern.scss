@@ -1,0 +1,60 @@
+.weave {
+  background: linear-gradient(
+      135deg,
+      $bgcolor 22px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        $bgcolor 22px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )0 64px;
+  background-color: $bgcolor;
+  background-size: 64px 128px;
+}
+
+.shippo {
+  background-color: #def;
+  background-image: radial-gradient(
+      closest-side,
+      transparent 98%,
+      rgba(0, 0, 0, 0.3) 99%
+    ),
+    radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, 0.3) 99%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.starryNight {
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  color: lightgray;
+  .divider {
+    background-color: lightgray;
+  }
+}

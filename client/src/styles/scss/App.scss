@@ -4,7 +4,7 @@ $bgcolor: #a1acb7;
 
 .container {
   width: $screen-width;
-  height: $screen-height;
+  // height: $screen-height;
   overflow: hidden;
   border-radius: 50px;
 }
@@ -14,11 +14,9 @@ $bgcolor: #a1acb7;
 }
 
 #list {
-  // height: $screen-height * 6;
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
-  // margin-left: -($screen-width * 2);
-  animation: slide 13s infinite alternate;
+  // animation: slide 13s infinite alternate;
 }
 
 @keyframes slide {
@@ -33,114 +31,5 @@ $bgcolor: #a1acb7;
   height: $screen-height;
 }
 
-.coffeeInfo {
-  display: grid;
-  grid-template-columns: 45% 1% 54%;
-  text-align: center;
-  font-family: "Lucida Bright", serif;
-  text-shadow: 3px 3px 2px rgba(120, 120, 120, 1);
-
-  .firstDiv {
-    display: grid;
-    grid-template-rows: 30% 70%;
-    padding: 20px;
-    height: inherit;
-
-    .name {
-      align-self: center;
-      font-size: 2rem;
-
-      span {
-        font-size: 1.6rem;
-      }
-    }
-    .map {
-      width: 100%;
-      height: 85%;
-    }
-  }
-
-  .divider {
-    width: 5px;
-    height: 80%;
-    background-color: black;
-    align-self: center;
-  }
-
-  .secondDiv {
-    display: grid;
-    grid-template-rows: 34% 22% 22% 22%;
-    padding: 100px 0;
-    font-size: 1.8rem;
-    text-transform: capitalize;
-    text-align: left;
-    * {
-      padding: 30px 50px 0;
-    }
-    .flavorNotes {
-      text-align: center;
-    }
-  }
-}
-
-// http://lea.verou.me/css3patterns/
-.weave {
-  background: linear-gradient(
-      135deg,
-      $bgcolor 22px,
-      #d9ecff 22px,
-      #d9ecff 24px,
-      transparent 24px,
-      transparent 67px,
-      #d9ecff 67px,
-      #d9ecff 69px,
-      transparent 69px
-    ),
-    linear-gradient(
-        225deg,
-        $bgcolor 22px,
-        #d9ecff 22px,
-        #d9ecff 24px,
-        transparent 24px,
-        transparent 67px,
-        #d9ecff 67px,
-        #d9ecff 69px,
-        transparent 69px
-      )0 64px;
-  background-color: $bgcolor;
-  background-size: 64px 128px;
-}
-
-.shippo {
-  background-color: #def;
-  background-image: radial-gradient(
-      closest-side,
-      transparent 98%,
-      rgba(0, 0, 0, 0.3) 99%
-    ),
-    radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, 0.3) 99%);
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-}
-
-.starryNight {
-  background-color: black;
-  background-image: radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1) 2px,
-      transparent 30px
-    );
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  color: lightgray;
-  .divider {
-    background-color: lightgray;
-  }
-}
+@import "coffee";
+@import "backgroundPattern";
