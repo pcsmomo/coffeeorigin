@@ -46,9 +46,12 @@ $bgcolor: #a1acb7;
   float: left;
 }
 
-.coffeeInfo {
+.scene {
   width: $screen-width;
   height: $screen-height;
+}
+
+.coffeeInfo {
   display: grid;
   grid-template-columns: 45% 1% 54%;
   text-align: center;

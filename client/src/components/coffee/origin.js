@@ -40,7 +40,7 @@ class Origin extends Component {
 
   render() {
     return (
-      <div className="coffeeInfo weave">
+      <div className="coffeeInfo scene weave">
         <div className="firstDiv">
           <h3 className="name">{this.props.origin.oname}</h3>
           <div ref={display => (this.display = display)} className="map" />

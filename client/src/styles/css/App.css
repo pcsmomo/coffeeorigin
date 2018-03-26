@@ -30,9 +30,11 @@
 #list > * {
   float: left; }
 
-.coffeeInfo {
+.scene {
   width: 1010px;
-  height: 735px;
+  height: 735px; }
+
+.coffeeInfo {
   display: grid;
   grid-template-columns: 45% 1% 54%;
   text-align: center;

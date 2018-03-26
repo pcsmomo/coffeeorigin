@@ -33,7 +33,7 @@ class Blend extends Component {
 
   render() {
     return (
-      <div className="coffeeInfo starryNight">
+      <div className="coffeeInfo scene starryNight">
         <div className="firstDiv">
           <h3 className="name">
             Shady Lane
