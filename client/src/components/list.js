@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchOrigins, fetchCountries } from "../../actions";
+import { fetchOrigins, fetchCountries } from "../actions";
 
-import Origin from "./origin";
-import Blend from "./blend";
+import Origin from "./coffee/origin";
+import Blend from "./coffee/blend";
 
 let toggle = true; // for not mixing the end node.
 const reArrange = () => {
