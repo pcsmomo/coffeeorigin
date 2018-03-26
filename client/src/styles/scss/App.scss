@@ -14,7 +14,7 @@ $bgcolor: #a1acb7;
 }
 
 #list {
-  height: $screen-height * 3;
+  // height: $screen-height * 6;
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
   // margin-left: -($screen-width * 2);
@@ -22,24 +22,6 @@ $bgcolor: #a1acb7;
 }
 
 @keyframes slide {
-  0% {
-    margin-top: 0px;
-  }
-  30% {
-    margin-top: 0px;
-  }
-  35% {
-    margin-top: -($screen-height);
-  }
-  65% {
-    margin-top: -($screen-height);
-  }
-  70% {
-    margin-top: -($screen-height * 2);
-  }
-  100% {
-    margin-top: -($screen-height * 2);
-  }
 }
 
 #list > * {

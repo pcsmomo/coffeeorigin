@@ -8,26 +8,11 @@
   padding: 50px; }
 
 #list {
-  height: 2205px;
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
   animation: slide 13s infinite alternate; }
 
-@keyframes slide {
-  0% {
-    margin-top: 0px; }
-  30% {
-    margin-top: 0px; }
-  35% {
-    margin-top: -735px; }
-  65% {
-    margin-top: -735px; }
-  70% {
-    margin-top: -1470px; }
-  100% {
-    margin-top: -1470px; } }
-
-#list > * {
+@keyframes slide {}#list > * {
   float: left; }
 
 .scene {
