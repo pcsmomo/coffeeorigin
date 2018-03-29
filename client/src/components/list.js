@@ -4,6 +4,7 @@ import { fetchOrigins, fetchCountries } from "../actions";
 
 import Origin from "./coffee/origin";
 import Blend from "./coffee/blend";
+import Picture from "./picture/picture";
 
 let toggle = true; // for not mixing the end node.
 const reArrange = () => {
@@ -36,9 +37,8 @@ const getKeyframesRule = ruleName => {
       for (x = 0; x < ss[i].cssRules.length; ++x) {
         rule = ss[i].cssRules[x];
         if (
-          // (rule.type === window.CSSRule.KEYFRAMES_RULE ||
-          //   rule.type === window.CSSRule.WEBKIT_KEYFRAMES_RULE) &&
-          rule.type === window.CSSRule.KEYFRAMES_RULE &&
+          (rule.type === window.CSSRule.KEYFRAMES_RULE ||
+            rule.type === window.CSSRule.WEBKIT_KEYFRAMES_RULE) &&
           rule.name === ruleName &&
           rule.cssText.startsWith("@keyframes")
         ) {
@@ -93,7 +93,6 @@ const initiateKeyFrame = () => {
 
 const getInterval = second => {
   let sceneList = document.getElementsByClassName("scene");
-  console.log(sceneList.length);
   return sceneList.length * second; // scenes * second
 };
 
@@ -110,9 +109,9 @@ class List extends Component {
     setTimeout(() => {
       let interval = getInterval(6); // seconds for a scene.
       setInterval(reArrange, interval * 1000);
-      setAnimationTime(interval);
-      initiateKeyFrame();
-    }, 300); // Not working because
+      // setAnimationTime(interval);
+      // initiateKeyFrame();
+    }, 1000); // Not working because
   }
 
   findCountry(ccode) {
@@ -137,8 +136,15 @@ class List extends Component {
     return (
       <div id="list">
         {this.renderOrigins()}
+        <Picture file="imgCrew1.JPG" />
+        <Picture file="imgBrew.JPG" />
         <Blend />
+        <Picture file="imgFamily.JPG" />
+        <Picture file="imgTigerCar.JPG" />
         {this.renderOrigins()}
+        <Picture file="imgVonnie.png" />
+        <Picture file="imgCrew2.JPG" />
+        <Picture file="imgRMA.png" />
         <Blend />
       </div>
     );

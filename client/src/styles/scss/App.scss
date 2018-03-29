@@ -4,7 +4,7 @@ $bgcolor: #a1acb7;
 
 .container {
   width: $screen-width;
-  // height: $screen-height;
+  height: $screen-height;
   overflow: hidden;
   border-radius: 50px;
 }
@@ -16,10 +16,122 @@ $bgcolor: #a1acb7;
 #list {
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
-  // animation: slide 13s infinite alternate;
+  -webkit-animation: slide 78s infinite alternate;
+  animation: slide 78s infinite alternate;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-top: 0px;
+  }
+  9% {
+    margin-top: 0px;
+  }
+  11% {
+    margin-top: -735px;
+  }
+  20% {
+    margin-top: -735px;
+  }
+  22% {
+    margin-top: -1470px;
+  }
+  31% {
+    margin-top: -1470px;
+  }
+  33% {
+    margin-top: -2205px;
+  }
+  42% {
+    margin-top: -2205px;
+  }
+  44% {
+    margin-top: -2940px;
+  }
+  53% {
+    margin-top: -2940px;
+  }
+  55% {
+    margin-top: -3675px;
+  }
+  64% {
+    margin-top: -3675px;
+  }
+  66% {
+    margin-top: -4410px;
+  }
+  75% {
+    margin-top: -4410px;
+  }
+  77% {
+    margin-top: -5145px;
+  }
+  86% {
+    margin-top: -5145px;
+  }
+  88% {
+    margin-top: -5880px;
+  }
+  100% {
+    margin-top: -5880px;
+  }
 }
 
 @keyframes slide {
+  0% {
+    margin-top: 0px;
+  }
+  9% {
+    margin-top: 0px;
+  }
+  11% {
+    margin-top: -735px;
+  }
+  20% {
+    margin-top: -735px;
+  }
+  22% {
+    margin-top: -1470px;
+  }
+  31% {
+    margin-top: -1470px;
+  }
+  33% {
+    margin-top: -2205px;
+  }
+  42% {
+    margin-top: -2205px;
+  }
+  44% {
+    margin-top: -2940px;
+  }
+  53% {
+    margin-top: -2940px;
+  }
+  55% {
+    margin-top: -3675px;
+  }
+  64% {
+    margin-top: -3675px;
+  }
+  66% {
+    margin-top: -4410px;
+  }
+  75% {
+    margin-top: -4410px;
+  }
+  77% {
+    margin-top: -5145px;
+  }
+  86% {
+    margin-top: -5145px;
+  }
+  88% {
+    margin-top: -5880px;
+  }
+  100% {
+    margin-top: -5880px;
+  }
 }
 
 #list > * {
@@ -33,3 +145,4 @@ $bgcolor: #a1acb7;
 
 @import "coffee";
 @import "backgroundPattern";
+@import "picture";
