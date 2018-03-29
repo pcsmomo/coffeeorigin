@@ -101,7 +101,7 @@ const setAnimationTime = interval => {
 
 class List extends Component {
   componentDidMount() {
-    this.props.fetchCountries(); // * 비동기의 문제로, fetchCountries 가 끝나기 전에 findCountry가 실행된 경우 오류 발생.
+    this.props.fetchCountries(); // * 비동기의 문제로, fetchCountries 가 끝나기 전에 fetchOrigins가 실행된 경우 오류 발생.
     this.props.fetchOrigins();
 
     setTimeout(() => {
