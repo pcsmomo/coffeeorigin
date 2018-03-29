@@ -57,7 +57,7 @@ const initiateKeyFrame = () => {
 
   if (keyFrameSlide !== null) {
     // delete all rules on the keyframe
-    for (let i = 0; i <= 100; i++) keyFrameSlide.deleteRule(`${i}%`);
+    for (let i = 0; i <= 1000; i++) keyFrameSlide.deleteRule(`${i / 10}%`);
 
     // declare variables
     let sceneList = document.getElementsByClassName("scene");
@@ -65,29 +65,27 @@ const initiateKeyFrame = () => {
     let curPercentage = 0;
     let curMarginTop = 0;
 
-    let intervalPct = Math.floor(100 / listLen); // 100 % / length
-    let transitionPct = Math.floor(intervalPct * 0.2); // transition time is 1/5
+    let intervalPct = Math.round(100 / listLen * 10) / 10; // 100 % / length
+    let transitionPct = Math.round(intervalPct * 0.2 * 10) / 10; // transition time is 1/5
 
     // for loop until before the last loop
-    for (let i = 0; i < listLen - 1; i++) {
+    for (let i = 0; i < listLen; i++) {
+      if (i > 0) curPercentage += transitionPct;
+
       keyFrameSlide.appendRule(
         `${curPercentage}% {margin-top: ${curMarginTop}px; }`
       );
-      curPercentage += intervalPct;
+
+      if (i === 0) curPercentage += intervalPct - Math.floor(transitionPct / 2);
+      else if (i >= listLen - 1) curPercentage = 100;
+      else curPercentage += intervalPct - transitionPct;
+
       keyFrameSlide.appendRule(
-        `${curPercentage - transitionPct}% {margin-top: ${curMarginTop}px; }`
+        `${curPercentage}% {margin-top: ${curMarginTop}px; }`
       );
+
       curMarginTop -= marginTop;
     }
-
-    // last percentage to make 100%
-    keyFrameSlide.appendRule(
-      `${curPercentage}% {margin-top: ${curMarginTop}px; }`
-    );
-    curPercentage += intervalPct;
-    keyFrameSlide.appendRule(`100% {margin-top: ${curMarginTop}px; }`);
-
-    // console.log(keyFrameSlide.cssText);
   }
 };
 
@@ -107,11 +105,11 @@ class List extends Component {
     this.props.fetchOrigins();
 
     setTimeout(() => {
-      let interval = getInterval(6); // seconds for a scene.
+      let interval = getInterval(10); // seconds for a scene.
       setInterval(reArrange, interval * 1000);
-      // setAnimationTime(interval);
-      // initiateKeyFrame();
-    }, 1000); // Not working because
+      setAnimationTime(interval);
+      initiateKeyFrame();
+    }, 2000); // Not working because
   }
 
   findCountry(ccode) {
