@@ -1,0 +1,137 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(slide) {
+  0% {
+    margin-top: 0px;
+  }
+  5% {
+    margin-top: 0px;
+  }
+  6% {
+    margin-top: -735px;
+  }
+  10% {
+    margin-top: -735px;
+  }
+  11% {
+    margin-top: -1470px;
+  }
+  15% {
+    margin-top: -1470px;
+  }
+  16% {
+    margin-top: -2205px;
+  }
+  20% {
+    margin-top: -2205px;
+  }
+  21% {
+    margin-top: -2940px;
+  }
+  25% {
+    margin-top: -2940px;
+  }
+  26% {
+    margin-top: -3675px;
+  }
+  30% {
+    margin-top: -3675px;
+  }
+  31% {
+    margin-top: -4410px;
+  }
+  35% {
+    margin-top: -4410px;
+  }
+  36% {
+    margin-top: -5145px;
+  }
+  40% {
+    margin-top: -5145px;
+  }
+  41% {
+    margin-top: -5880px;
+  }
+  45% {
+    margin-top: -5880px;
+  }
+  46% {
+    margin-top: -6615px;
+  }
+  50% {
+    margin-top: -6615px;
+  }
+  51% {
+    margin-top: -7350px;
+  }
+  55% {
+    margin-top: -7350px;
+  }
+  56% {
+    margin-top: -8085px;
+  }
+  60% {
+    margin-top: -8085px;
+  }
+  61% {
+    margin-top: -8820px;
+  }
+  65% {
+    margin-top: -8820px;
+  }
+  66% {
+    margin-top: -9555px;
+  }
+  70% {
+    margin-top: -9555px;
+  }
+  71% {
+    margin-top: -10290px;
+  }
+  75% {
+    margin-top: -10290px;
+  }
+  76% {
+    margin-top: -11025px;
+  }
+  80% {
+    margin-top: -11025px;
+  }
+  81% {
+    margin-top: -11760px;
+  }
+  85% {
+    margin-top: -11760px;
+  }
+  86% {
+    margin-top: -12495px;
+  }
+  90% {
+    margin-top: -12495px;
+  }
+  91% {
+    margin-top: -13230px;
+  }
+  95% {
+    margin-top: -13230px;
+  }
+  96% {
+    margin-top: -13965px;
+  }
+  100% {
+    margin-top: -13965px;
+  }
+}
