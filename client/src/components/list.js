@@ -7,12 +7,12 @@ import Blend from "./coffee/blend";
 import Picture from "./picture/picture";
 
 let toggle = true; // for not mixing the end node.
-const reArrange = () => {
+const reArrange = count => {
   let listElm = document.getElementById("list");
   let sceneList = document.getElementsByClassName("scene");
   let listLen = sceneList.length;
   // picking one node up and put into the middle of list, except the end node
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < count; i++) {
     let idx;
     if (toggle) {
       idx = Math.floor(Math.random() * (listLen - 1));
@@ -106,7 +106,7 @@ class List extends Component {
 
     setTimeout(() => {
       let interval = getInterval(10); // seconds for a scene.
-      setInterval(reArrange, interval * 1000);
+      setInterval(reArrange(20), interval * 1000);
       setAnimationTime(interval);
       initiateKeyFrame();
     }, 2000); // Not working because
@@ -134,15 +134,21 @@ class List extends Component {
     return (
       <div id="list">
         {this.renderOrigins()}
-        <Picture file="imgCrew1.JPG" />
-        <Picture file="imgBrew.JPG" />
+        <Picture file="imgCrew3.JPG" />
+        <Picture file="imgSpecial.jpg" />
         <Blend />
+        <Picture file="imgBrew.JPG" />
         <Picture file="imgFamily.JPG" />
-        <Picture file="imgTigerCar.JPG" />
         {this.renderOrigins()}
+        <Picture file="imgTigerCar.JPG" />
+        <Picture file="imgBicycles.jpg" />
+        <Blend />
+        <Picture file="imgCrew1.JPG" />
         <Picture file="imgVonnie.png" />
-        <Picture file="imgCrew2.JPG" />
+        {this.renderOrigins()}
         <Picture file="imgRMA.png" />
+        <Picture file="imgOldBuilding.jpg" />
+        <Picture file="imgSavoryRoll.jpg" />
         <Blend />
       </div>
     );
