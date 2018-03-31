@@ -99,6 +99,24 @@ const setAnimationTime = interval => {
   listElm.style.animation = `slide ${interval}s infinite alternate`;
 };
 
+const bindPlayPause = () => {
+  let listElm = document.getElementById("sceneList");
+  let divPlay = document.getElementById("divPlay");
+
+  const innerBind = () => {
+    if (listElm.style.animationPlayState !== "paused") {
+      listElm.style.animationPlayState = "paused";
+      divPlay.style.display = "block";
+    } else {
+      listElm.style.animationPlayState = "running";
+      divPlay.style.display = "none";
+    }
+  };
+
+  listElm.addEventListener("click", innerBind);
+  divPlay.addEventListener("click", innerBind);
+};
+
 class Show extends Component {
   componentDidMount() {
     this.props.fetchCountries(); // * 비동기의 문제로, fetchCountries 가 끝나기 전에 fetchOrigins가 실행된 경우 오류 발생.
@@ -109,6 +127,7 @@ class Show extends Component {
       setInterval(reArrange(20), interval * 1000);
       setAnimationTime(interval);
       initiateKeyFrame();
+      bindPlayPause();
     }, 2000); // Not working because
   }
 
@@ -133,6 +152,7 @@ class Show extends Component {
   render() {
     return (
       <div className="sceneContainer">
+        <div id="divPlay" />
         <div id="sceneList">
           {this.renderOrigins()}
           <Picture file="imgCrew3.JPG" />

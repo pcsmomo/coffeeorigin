@@ -7,6 +7,7 @@ $bgcolor: #a1acb7;
 }
 
 .sceneContainer {
+  position: relative;
   width: $screen-width;
   height: $screen-height;
   overflow: hidden;
@@ -29,6 +30,24 @@ $bgcolor: #a1acb7;
 
 #list > .scene {
   border-radius: 50px;
+}
+
+$divPlayWidth: 300px;
+#divPlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: $divPlayWidth;
+  height: $divPlayWidth;
+  box-sizing: border-box;
+  z-index: 10;
+  border-style: solid;
+  border-width: $divPlayWidth/2 0px $divPlayWidth/2 $divPlayWidth;
+  border-color: transparent transparent transparent rgba(65, 152, 244, 0.6);
+  cursor: pointer;
 }
 
 @import "coffee";

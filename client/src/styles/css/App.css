@@ -2,6 +2,7 @@
   padding: 50px; }
 
 .sceneContainer {
+  position: relative;
   width: 1010px;
   height: 735px;
   overflow: hidden;
@@ -361,6 +362,22 @@
 
 #list > .scene {
   border-radius: 50px; }
+
+#divPlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  z-index: 10;
+  border-style: solid;
+  border-width: 150px 0px 150px 300px;
+  border-color: transparent transparent transparent rgba(65, 152, 244, 0.6);
+  cursor: pointer; }
 
 .coffeeInfo {
   display: grid;
