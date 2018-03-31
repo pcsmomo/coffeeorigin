@@ -364,6 +364,7 @@
   border-radius: 50px; }
 
 #divPlay {
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
