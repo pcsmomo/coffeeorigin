@@ -14,298 +14,346 @@
 @-webkit-keyframes slide {
   0% {
     margin-top: 0px; }
-  5.6% {
+  4.8% {
     margin-top: 0px; }
-  6.7% {
+  5.8% {
     margin-top: -735px; }
-  11.2% {
+  9.6% {
     margin-top: -735px; }
-  12.3% {
+  10.6% {
     margin-top: -1470px; }
-  16.8% {
+  14.4% {
     margin-top: -1470px; }
-  17.9% {
+  15.4% {
     margin-top: -2205px; }
-  22.4% {
+  19.2% {
     margin-top: -2205px; }
-  23.5% {
+  20.2% {
     margin-top: -2940px; }
-  28% {
+  24% {
     margin-top: -2940px; }
-  29.1% {
+  25% {
     margin-top: -3675px; }
+  28.8% {
+    margin-top: -3675px; }
+  29.8% {
+    margin-top: -4410px; }
   33.6% {
-    margin-top: -3675px; }
-  34.7% {
     margin-top: -4410px; }
-  39.2% {
-    margin-top: -4410px; }
-  40.3% {
+  34.6% {
     margin-top: -5145px; }
-  44.8% {
+  38.4% {
     margin-top: -5145px; }
-  45.9% {
+  39.4% {
     margin-top: -5880px; }
-  50.4% {
+  43.2% {
     margin-top: -5880px; }
-  51.5% {
+  44.2% {
     margin-top: -6615px; }
-  56% {
+  48% {
     margin-top: -6615px; }
-  57.1% {
+  49% {
     margin-top: -7350px; }
-  61.6% {
+  52.8% {
     margin-top: -7350px; }
-  62.7% {
+  53.8% {
     margin-top: -8085px; }
+  57.6% {
+    margin-top: -8085px; }
+  58.6% {
+    margin-top: -8820px; }
+  62.4% {
+    margin-top: -8820px; }
+  63.4% {
+    margin-top: -9555px; }
   67.2% {
-    margin-top: -8085px; }
-  68.3% {
-    margin-top: -8820px; }
-  72.8% {
-    margin-top: -8820px; }
-  73.9% {
     margin-top: -9555px; }
-  78.4% {
-    margin-top: -9555px; }
-  79.5% {
+  68.2% {
     margin-top: -10290px; }
-  84% {
+  72% {
     margin-top: -10290px; }
-  85.1% {
+  73% {
     margin-top: -11025px; }
-  89.6% {
+  76.8% {
     margin-top: -11025px; }
-  90.7% {
+  77.8% {
     margin-top: -11760px; }
-  95.2% {
+  81.6% {
     margin-top: -11760px; }
-  96.3% {
+  82.6% {
     margin-top: -12495px; }
+  86.4% {
+    margin-top: -12495px; }
+  87.4% {
+    margin-top: -13230px; }
+  91.2% {
+    margin-top: -13230px; }
+  92.2% {
+    margin-top: -13965px; }
+  96% {
+    margin-top: -13965px; }
+  97% {
+    margin-top: -14700px; }
   100% {
-    margin-top: -12495px; } }
+    margin-top: -14700px; } }
 
 @-moz-keyframes slide {
   0% {
     margin-top: 0px; }
-  5.6% {
+  4.8% {
     margin-top: 0px; }
-  6.7% {
+  5.8% {
     margin-top: -735px; }
-  11.2% {
+  9.6% {
     margin-top: -735px; }
-  12.3% {
+  10.6% {
     margin-top: -1470px; }
-  16.8% {
+  14.4% {
     margin-top: -1470px; }
-  17.9% {
+  15.4% {
     margin-top: -2205px; }
-  22.4% {
+  19.2% {
     margin-top: -2205px; }
-  23.5% {
+  20.2% {
     margin-top: -2940px; }
-  28% {
+  24% {
     margin-top: -2940px; }
-  29.1% {
+  25% {
     margin-top: -3675px; }
+  28.8% {
+    margin-top: -3675px; }
+  29.8% {
+    margin-top: -4410px; }
   33.6% {
-    margin-top: -3675px; }
-  34.7% {
     margin-top: -4410px; }
-  39.2% {
-    margin-top: -4410px; }
-  40.3% {
+  34.6% {
     margin-top: -5145px; }
-  44.8% {
+  38.4% {
     margin-top: -5145px; }
-  45.9% {
+  39.4% {
     margin-top: -5880px; }
-  50.4% {
+  43.2% {
     margin-top: -5880px; }
-  51.5% {
+  44.2% {
     margin-top: -6615px; }
-  56% {
+  48% {
     margin-top: -6615px; }
-  57.1% {
+  49% {
     margin-top: -7350px; }
-  61.6% {
+  52.8% {
     margin-top: -7350px; }
-  62.7% {
+  53.8% {
     margin-top: -8085px; }
+  57.6% {
+    margin-top: -8085px; }
+  58.6% {
+    margin-top: -8820px; }
+  62.4% {
+    margin-top: -8820px; }
+  63.4% {
+    margin-top: -9555px; }
   67.2% {
-    margin-top: -8085px; }
-  68.3% {
-    margin-top: -8820px; }
-  72.8% {
-    margin-top: -8820px; }
-  73.9% {
     margin-top: -9555px; }
-  78.4% {
-    margin-top: -9555px; }
-  79.5% {
+  68.2% {
     margin-top: -10290px; }
-  84% {
+  72% {
     margin-top: -10290px; }
-  85.1% {
+  73% {
     margin-top: -11025px; }
-  89.6% {
+  76.8% {
     margin-top: -11025px; }
-  90.7% {
+  77.8% {
     margin-top: -11760px; }
-  95.2% {
+  81.6% {
     margin-top: -11760px; }
-  96.3% {
+  82.6% {
     margin-top: -12495px; }
+  86.4% {
+    margin-top: -12495px; }
+  87.4% {
+    margin-top: -13230px; }
+  91.2% {
+    margin-top: -13230px; }
+  92.2% {
+    margin-top: -13965px; }
+  96% {
+    margin-top: -13965px; }
+  97% {
+    margin-top: -14700px; }
   100% {
-    margin-top: -12495px; } }
+    margin-top: -14700px; } }
 
 @-ms-keyframes slide {
   0% {
     margin-top: 0px; }
-  5.6% {
+  4.8% {
     margin-top: 0px; }
-  6.7% {
+  5.8% {
     margin-top: -735px; }
-  11.2% {
+  9.6% {
     margin-top: -735px; }
-  12.3% {
+  10.6% {
     margin-top: -1470px; }
-  16.8% {
+  14.4% {
     margin-top: -1470px; }
-  17.9% {
+  15.4% {
     margin-top: -2205px; }
-  22.4% {
+  19.2% {
     margin-top: -2205px; }
-  23.5% {
+  20.2% {
     margin-top: -2940px; }
-  28% {
+  24% {
     margin-top: -2940px; }
-  29.1% {
+  25% {
     margin-top: -3675px; }
+  28.8% {
+    margin-top: -3675px; }
+  29.8% {
+    margin-top: -4410px; }
   33.6% {
-    margin-top: -3675px; }
-  34.7% {
     margin-top: -4410px; }
-  39.2% {
-    margin-top: -4410px; }
-  40.3% {
+  34.6% {
     margin-top: -5145px; }
-  44.8% {
+  38.4% {
     margin-top: -5145px; }
-  45.9% {
+  39.4% {
     margin-top: -5880px; }
-  50.4% {
+  43.2% {
     margin-top: -5880px; }
-  51.5% {
+  44.2% {
     margin-top: -6615px; }
-  56% {
+  48% {
     margin-top: -6615px; }
-  57.1% {
+  49% {
     margin-top: -7350px; }
-  61.6% {
+  52.8% {
     margin-top: -7350px; }
-  62.7% {
+  53.8% {
     margin-top: -8085px; }
+  57.6% {
+    margin-top: -8085px; }
+  58.6% {
+    margin-top: -8820px; }
+  62.4% {
+    margin-top: -8820px; }
+  63.4% {
+    margin-top: -9555px; }
   67.2% {
-    margin-top: -8085px; }
-  68.3% {
-    margin-top: -8820px; }
-  72.8% {
-    margin-top: -8820px; }
-  73.9% {
     margin-top: -9555px; }
-  78.4% {
-    margin-top: -9555px; }
-  79.5% {
+  68.2% {
     margin-top: -10290px; }
-  84% {
+  72% {
     margin-top: -10290px; }
-  85.1% {
+  73% {
     margin-top: -11025px; }
-  89.6% {
+  76.8% {
     margin-top: -11025px; }
-  90.7% {
+  77.8% {
     margin-top: -11760px; }
-  95.2% {
+  81.6% {
     margin-top: -11760px; }
-  96.3% {
+  82.6% {
     margin-top: -12495px; }
+  86.4% {
+    margin-top: -12495px; }
+  87.4% {
+    margin-top: -13230px; }
+  91.2% {
+    margin-top: -13230px; }
+  92.2% {
+    margin-top: -13965px; }
+  96% {
+    margin-top: -13965px; }
+  97% {
+    margin-top: -14700px; }
   100% {
-    margin-top: -12495px; } }
+    margin-top: -14700px; } }
 
 @keyframes slide {
   0% {
     margin-top: 0px; }
-  5.6% {
+  4.8% {
     margin-top: 0px; }
-  6.7% {
+  5.8% {
     margin-top: -735px; }
-  11.2% {
+  9.6% {
     margin-top: -735px; }
-  12.3% {
+  10.6% {
     margin-top: -1470px; }
-  16.8% {
+  14.4% {
     margin-top: -1470px; }
-  17.9% {
+  15.4% {
     margin-top: -2205px; }
-  22.4% {
+  19.2% {
     margin-top: -2205px; }
-  23.5% {
+  20.2% {
     margin-top: -2940px; }
-  28% {
+  24% {
     margin-top: -2940px; }
-  29.1% {
+  25% {
     margin-top: -3675px; }
+  28.8% {
+    margin-top: -3675px; }
+  29.8% {
+    margin-top: -4410px; }
   33.6% {
-    margin-top: -3675px; }
-  34.7% {
     margin-top: -4410px; }
-  39.2% {
-    margin-top: -4410px; }
-  40.3% {
+  34.6% {
     margin-top: -5145px; }
-  44.8% {
+  38.4% {
     margin-top: -5145px; }
-  45.9% {
+  39.4% {
     margin-top: -5880px; }
-  50.4% {
+  43.2% {
     margin-top: -5880px; }
-  51.5% {
+  44.2% {
     margin-top: -6615px; }
-  56% {
+  48% {
     margin-top: -6615px; }
-  57.1% {
+  49% {
     margin-top: -7350px; }
-  61.6% {
+  52.8% {
     margin-top: -7350px; }
-  62.7% {
+  53.8% {
     margin-top: -8085px; }
+  57.6% {
+    margin-top: -8085px; }
+  58.6% {
+    margin-top: -8820px; }
+  62.4% {
+    margin-top: -8820px; }
+  63.4% {
+    margin-top: -9555px; }
   67.2% {
-    margin-top: -8085px; }
-  68.3% {
-    margin-top: -8820px; }
-  72.8% {
-    margin-top: -8820px; }
-  73.9% {
     margin-top: -9555px; }
-  78.4% {
-    margin-top: -9555px; }
-  79.5% {
+  68.2% {
     margin-top: -10290px; }
-  84% {
+  72% {
     margin-top: -10290px; }
-  85.1% {
+  73% {
     margin-top: -11025px; }
-  89.6% {
+  76.8% {
     margin-top: -11025px; }
-  90.7% {
+  77.8% {
     margin-top: -11760px; }
-  95.2% {
+  81.6% {
     margin-top: -11760px; }
-  96.3% {
+  82.6% {
     margin-top: -12495px; }
+  86.4% {
+    margin-top: -12495px; }
+  87.4% {
+    margin-top: -13230px; }
+  91.2% {
+    margin-top: -13230px; }
+  92.2% {
+    margin-top: -13965px; }
+  96% {
+    margin-top: -13965px; }
+  97% {
+    margin-top: -14700px; }
   100% {
-    margin-top: -12495px; } }
+    margin-top: -14700px; } }
 
 .scene {
   width: 1010px;
