@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Coffee from "./coffee";
+import Show from "./show";
 import List from "./list";
 
 import "../styles/css/App.css";
@@ -11,6 +12,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Route exact path="/" component={Coffee} />
+          <Route path="/show" component={Show} />
           <Route path="/list" component={List} />
         </div>
       </BrowserRouter>

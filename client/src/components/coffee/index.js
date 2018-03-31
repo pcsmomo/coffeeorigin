@@ -6,6 +6,8 @@ class Coffee extends Component {
     return (
       <div className="landing">
         <div>What Coffee we have?</div>
+        <Link to={"/Show"}>Go to the Slide Show</Link>
+        <br />
         <Link to={"/list"}>Go to the List</Link>
       </div>
     );

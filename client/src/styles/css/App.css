@@ -1,350 +1,318 @@
-.container {
+.landing {
+  padding: 50px; }
+
+.sceneContainer {
   width: 1010px;
   height: 735px;
   overflow: hidden;
   border-radius: 50px; }
 
-.landing {
-  padding: 50px; }
-
-#list {
+#sceneList {
   overflow: hidden;
   /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */ }
 
 @-webkit-keyframes slide {
   0% {
     margin-top: 0px; }
-  5% {
+  5.6% {
     margin-top: 0px; }
-  6% {
+  6.7% {
     margin-top: -735px; }
-  10% {
+  11.2% {
     margin-top: -735px; }
-  11% {
+  12.3% {
     margin-top: -1470px; }
-  15% {
+  16.8% {
     margin-top: -1470px; }
-  16% {
+  17.9% {
     margin-top: -2205px; }
-  20% {
+  22.4% {
     margin-top: -2205px; }
-  21% {
+  23.5% {
     margin-top: -2940px; }
-  25% {
+  28% {
     margin-top: -2940px; }
-  26% {
+  29.1% {
     margin-top: -3675px; }
-  30% {
+  33.6% {
     margin-top: -3675px; }
-  31% {
+  34.7% {
     margin-top: -4410px; }
-  35% {
+  39.2% {
     margin-top: -4410px; }
-  36% {
+  40.3% {
     margin-top: -5145px; }
-  40% {
+  44.8% {
     margin-top: -5145px; }
-  41% {
+  45.9% {
     margin-top: -5880px; }
-  45% {
+  50.4% {
     margin-top: -5880px; }
-  46% {
+  51.5% {
     margin-top: -6615px; }
-  50% {
-    margin-top: -6615px; }
-  51% {
-    margin-top: -7350px; }
-  55% {
-    margin-top: -7350px; }
   56% {
+    margin-top: -6615px; }
+  57.1% {
+    margin-top: -7350px; }
+  61.6% {
+    margin-top: -7350px; }
+  62.7% {
     margin-top: -8085px; }
-  60% {
+  67.2% {
     margin-top: -8085px; }
-  61% {
+  68.3% {
     margin-top: -8820px; }
-  65% {
+  72.8% {
     margin-top: -8820px; }
-  66% {
+  73.9% {
     margin-top: -9555px; }
-  70% {
+  78.4% {
     margin-top: -9555px; }
-  71% {
+  79.5% {
     margin-top: -10290px; }
-  75% {
+  84% {
     margin-top: -10290px; }
-  76% {
+  85.1% {
     margin-top: -11025px; }
-  80% {
+  89.6% {
     margin-top: -11025px; }
-  81% {
+  90.7% {
     margin-top: -11760px; }
-  85% {
+  95.2% {
     margin-top: -11760px; }
-  86% {
+  96.3% {
     margin-top: -12495px; }
-  90% {
-    margin-top: -12495px; }
-  91% {
-    margin-top: -13230px; }
-  95% {
-    margin-top: -13230px; }
-  96% {
-    margin-top: -13965px; }
   100% {
-    margin-top: -13965px; } }
+    margin-top: -12495px; } }
 
 @-moz-keyframes slide {
   0% {
     margin-top: 0px; }
-  5% {
+  5.6% {
     margin-top: 0px; }
-  6% {
+  6.7% {
     margin-top: -735px; }
-  10% {
+  11.2% {
     margin-top: -735px; }
-  11% {
+  12.3% {
     margin-top: -1470px; }
-  15% {
+  16.8% {
     margin-top: -1470px; }
-  16% {
+  17.9% {
     margin-top: -2205px; }
-  20% {
+  22.4% {
     margin-top: -2205px; }
-  21% {
+  23.5% {
     margin-top: -2940px; }
-  25% {
+  28% {
     margin-top: -2940px; }
-  26% {
+  29.1% {
     margin-top: -3675px; }
-  30% {
+  33.6% {
     margin-top: -3675px; }
-  31% {
+  34.7% {
     margin-top: -4410px; }
-  35% {
+  39.2% {
     margin-top: -4410px; }
-  36% {
+  40.3% {
     margin-top: -5145px; }
-  40% {
+  44.8% {
     margin-top: -5145px; }
-  41% {
+  45.9% {
     margin-top: -5880px; }
-  45% {
+  50.4% {
     margin-top: -5880px; }
-  46% {
+  51.5% {
     margin-top: -6615px; }
-  50% {
-    margin-top: -6615px; }
-  51% {
-    margin-top: -7350px; }
-  55% {
-    margin-top: -7350px; }
   56% {
+    margin-top: -6615px; }
+  57.1% {
+    margin-top: -7350px; }
+  61.6% {
+    margin-top: -7350px; }
+  62.7% {
     margin-top: -8085px; }
-  60% {
+  67.2% {
     margin-top: -8085px; }
-  61% {
+  68.3% {
     margin-top: -8820px; }
-  65% {
+  72.8% {
     margin-top: -8820px; }
-  66% {
+  73.9% {
     margin-top: -9555px; }
-  70% {
+  78.4% {
     margin-top: -9555px; }
-  71% {
+  79.5% {
     margin-top: -10290px; }
-  75% {
+  84% {
     margin-top: -10290px; }
-  76% {
+  85.1% {
     margin-top: -11025px; }
-  80% {
+  89.6% {
     margin-top: -11025px; }
-  81% {
+  90.7% {
     margin-top: -11760px; }
-  85% {
+  95.2% {
     margin-top: -11760px; }
-  86% {
+  96.3% {
     margin-top: -12495px; }
-  90% {
-    margin-top: -12495px; }
-  91% {
-    margin-top: -13230px; }
-  95% {
-    margin-top: -13230px; }
-  96% {
-    margin-top: -13965px; }
   100% {
-    margin-top: -13965px; } }
+    margin-top: -12495px; } }
 
 @-ms-keyframes slide {
   0% {
     margin-top: 0px; }
-  5% {
+  5.6% {
     margin-top: 0px; }
-  6% {
+  6.7% {
     margin-top: -735px; }
-  10% {
+  11.2% {
     margin-top: -735px; }
-  11% {
+  12.3% {
     margin-top: -1470px; }
-  15% {
+  16.8% {
     margin-top: -1470px; }
-  16% {
+  17.9% {
     margin-top: -2205px; }
-  20% {
+  22.4% {
     margin-top: -2205px; }
-  21% {
+  23.5% {
     margin-top: -2940px; }
-  25% {
+  28% {
     margin-top: -2940px; }
-  26% {
+  29.1% {
     margin-top: -3675px; }
-  30% {
+  33.6% {
     margin-top: -3675px; }
-  31% {
+  34.7% {
     margin-top: -4410px; }
-  35% {
+  39.2% {
     margin-top: -4410px; }
-  36% {
+  40.3% {
     margin-top: -5145px; }
-  40% {
+  44.8% {
     margin-top: -5145px; }
-  41% {
+  45.9% {
     margin-top: -5880px; }
-  45% {
+  50.4% {
     margin-top: -5880px; }
-  46% {
+  51.5% {
     margin-top: -6615px; }
-  50% {
-    margin-top: -6615px; }
-  51% {
-    margin-top: -7350px; }
-  55% {
-    margin-top: -7350px; }
   56% {
+    margin-top: -6615px; }
+  57.1% {
+    margin-top: -7350px; }
+  61.6% {
+    margin-top: -7350px; }
+  62.7% {
     margin-top: -8085px; }
-  60% {
+  67.2% {
     margin-top: -8085px; }
-  61% {
+  68.3% {
     margin-top: -8820px; }
-  65% {
+  72.8% {
     margin-top: -8820px; }
-  66% {
+  73.9% {
     margin-top: -9555px; }
-  70% {
+  78.4% {
     margin-top: -9555px; }
-  71% {
+  79.5% {
     margin-top: -10290px; }
-  75% {
+  84% {
     margin-top: -10290px; }
-  76% {
+  85.1% {
     margin-top: -11025px; }
-  80% {
+  89.6% {
     margin-top: -11025px; }
-  81% {
+  90.7% {
     margin-top: -11760px; }
-  85% {
+  95.2% {
     margin-top: -11760px; }
-  86% {
+  96.3% {
     margin-top: -12495px; }
-  90% {
-    margin-top: -12495px; }
-  91% {
-    margin-top: -13230px; }
-  95% {
-    margin-top: -13230px; }
-  96% {
-    margin-top: -13965px; }
   100% {
-    margin-top: -13965px; } }
+    margin-top: -12495px; } }
 
 @keyframes slide {
   0% {
     margin-top: 0px; }
-  5% {
+  5.6% {
     margin-top: 0px; }
-  6% {
+  6.7% {
     margin-top: -735px; }
-  10% {
+  11.2% {
     margin-top: -735px; }
-  11% {
+  12.3% {
     margin-top: -1470px; }
-  15% {
+  16.8% {
     margin-top: -1470px; }
-  16% {
+  17.9% {
     margin-top: -2205px; }
-  20% {
+  22.4% {
     margin-top: -2205px; }
-  21% {
+  23.5% {
     margin-top: -2940px; }
-  25% {
+  28% {
     margin-top: -2940px; }
-  26% {
+  29.1% {
     margin-top: -3675px; }
-  30% {
+  33.6% {
     margin-top: -3675px; }
-  31% {
+  34.7% {
     margin-top: -4410px; }
-  35% {
+  39.2% {
     margin-top: -4410px; }
-  36% {
+  40.3% {
     margin-top: -5145px; }
-  40% {
+  44.8% {
     margin-top: -5145px; }
-  41% {
+  45.9% {
     margin-top: -5880px; }
-  45% {
+  50.4% {
     margin-top: -5880px; }
-  46% {
+  51.5% {
     margin-top: -6615px; }
-  50% {
-    margin-top: -6615px; }
-  51% {
-    margin-top: -7350px; }
-  55% {
-    margin-top: -7350px; }
   56% {
+    margin-top: -6615px; }
+  57.1% {
+    margin-top: -7350px; }
+  61.6% {
+    margin-top: -7350px; }
+  62.7% {
     margin-top: -8085px; }
-  60% {
+  67.2% {
     margin-top: -8085px; }
-  61% {
+  68.3% {
     margin-top: -8820px; }
-  65% {
+  72.8% {
     margin-top: -8820px; }
-  66% {
+  73.9% {
     margin-top: -9555px; }
-  70% {
+  78.4% {
     margin-top: -9555px; }
-  71% {
+  79.5% {
     margin-top: -10290px; }
-  75% {
+  84% {
     margin-top: -10290px; }
-  76% {
+  85.1% {
     margin-top: -11025px; }
-  80% {
+  89.6% {
     margin-top: -11025px; }
-  81% {
+  90.7% {
     margin-top: -11760px; }
-  85% {
+  95.2% {
     margin-top: -11760px; }
-  86% {
+  96.3% {
     margin-top: -12495px; }
-  90% {
-    margin-top: -12495px; }
-  91% {
-    margin-top: -13230px; }
-  95% {
-    margin-top: -13230px; }
-  96% {
-    margin-top: -13965px; }
   100% {
-    margin-top: -13965px; } }
-
-#list > * {
-  float: left; }
+    margin-top: -12495px; } }
 
 .scene {
   width: 1010px;
   height: 735px; }
+
+#list > .scene {
+  border-radius: 50px; }
 
 .coffeeInfo {
   display: grid;
