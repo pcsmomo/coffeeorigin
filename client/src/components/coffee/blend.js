@@ -36,7 +36,15 @@ class Blend extends Component {
       <div className="coffeeInfo scene starryNight">
         <div className="firstDiv">
           <h3 className="name">
-            Shady Lane
+            <img
+              id="imgShady01"
+              src="images/coffee/WOR_Retail_Web_Shady1.0.jpg"
+              alt=""
+            />Shady Lane<img
+              id="imgShady01"
+              src="images/coffee/Shady+Lane+Rat.jpg"
+              alt=""
+            />
             <br />
             <span>Colombia, Tanzania and Indonesia</span>
           </h3>

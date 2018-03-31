@@ -42,7 +42,14 @@ class Origin extends Component {
     return (
       <div className="coffeeInfo scene weave">
         <div className="firstDiv">
-          <h3 className="name">{this.props.origin.oname}</h3>
+          <h3 className="name">
+            <img
+              className="imgFlag"
+              src={"images/flags/" + this.props.origin.ccode + ".png"}
+              alt={this.props.origin.origin}
+            />
+            {this.props.origin.oname}
+          </h3>
           <div ref={display => (this.display = display)} className="map" />
         </div>
         <div className="divider" />
