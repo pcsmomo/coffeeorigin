@@ -154,16 +154,16 @@ class Show extends Component {
       <div className="sceneContainer">
         <div id="divPlay" />
         <div id="sceneList">
-        {this.renderOrigins()}
-        <Picture file="imgCrew3.JPG" />
-        <Blend />
-        <Picture file="imgBrew.JPG" />
-        {this.renderOrigins()}
-        <Picture file="imgBicycles.jpg" />
-        <Blend />
-        <Picture file="imgOldBuilding.jpg" />
-        {this.renderOrigins()}
-        <Blend />
+          {this.renderOrigins()}
+          <Picture file="imgCrew3.JPG" />
+          <Blend />
+          <Picture file="imgBrew.JPG" />
+          {this.renderOrigins()}
+          <Picture file="imgBicycles.jpg" />
+          <Blend />
+          <Picture file="imgOldBuilding.jpg" />
+          {this.renderOrigins()}
+          <Blend />
         </div>
       </div>
     );
