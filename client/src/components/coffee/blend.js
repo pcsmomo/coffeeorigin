@@ -18,7 +18,7 @@ class Blend extends Component {
               attribute: "fill",
               values: {
                 CO: "red",
-                ID: "red",
+                BR: "red",
                 TZ: "red"
               }
             }
@@ -26,7 +26,7 @@ class Blend extends Component {
         }
       })
       .vectorMap("set", "focus", {
-        regions: ["CO", "ID", "TZ"],
+        regions: ["CO", "BR", "TZ"],
         animate: true
       });
   }
@@ -46,7 +46,7 @@ class Blend extends Component {
               alt=""
             />
             <br />
-            <span>Colombia, Tanzania and Indonesia</span>
+            <span>Colombia, Tanzania and Brazil</span>
           </h3>
           <div ref={display => (this.display = display)} className="map" />
         </div>
