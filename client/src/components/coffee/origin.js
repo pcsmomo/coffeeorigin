@@ -57,7 +57,10 @@ class Origin extends Component {
           <div className="flavorNotes">"{this.props.origin.flavorNotes}"</div>
           <div className="use">single origin for {this.props.origin.use}</div>
           <div className="process">{this.props.origin.process}</div>
-          <div className="roastery">by {this.props.origin.roastery}</div>
+          <div className="roastery">
+            by {this.props.origin.roastery}
+            <img src="images/coffee/WOR_Logo.jpg" alt="" />
+          </div>
         </div>
       </div>
     );

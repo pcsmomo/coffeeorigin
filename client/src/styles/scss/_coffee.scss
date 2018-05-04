@@ -61,5 +61,15 @@
     .flavorNotes {
       text-align: center;
     }
+    .roastery {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        width: 80px;
+        border-radius: 50%;
+      }
+    }
   }
 }

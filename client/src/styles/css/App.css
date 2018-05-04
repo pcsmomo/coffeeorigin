@@ -295,6 +295,14 @@
       padding: 30px 50px 0; }
     .coffeeInfo .secondDiv .flavorNotes {
       text-align: center; }
+    .coffeeInfo .secondDiv .roastery {
+      position: relative; }
+      .coffeeInfo .secondDiv .roastery img {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        width: 80px;
+        border-radius: 50%; }
 
 .weave {
   background: linear-gradient(135deg, #a1acb7 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), linear-gradient(225deg, #a1acb7 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
