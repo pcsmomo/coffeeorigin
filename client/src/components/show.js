@@ -157,12 +157,13 @@ class Show extends Component {
           {this.renderOrigins()}
           <Picture file="imgCrew3.JPG" />
           <Blend />
-          <Picture file="imgBrew.JPG" />
+          <Picture file="imgSpecial.jpg" />
           {this.renderOrigins()}
-          <Picture file="imgBicycles.jpg" />
+          <Picture file="imgBrew.JPG" />
           <Blend />
           <Picture file="imgOldBuilding.jpg" />
           {this.renderOrigins()}
+          <Picture file="imgBicycles.jpg" />
           <Blend />
         </div>
       </div>
