@@ -55,20 +55,18 @@
     font-size: 1.8rem;
     text-transform: capitalize;
     text-align: left;
-    * {
+    div {
       padding: 30px 50px 0;
     }
     .flavorNotes {
       text-align: center;
     }
     .roastery {
-      position: relative;
       img {
-        position: absolute;
-        right: 0;
-        top: -20px;
         width: 80px;
+        margin-left: 10px;
         border-radius: 50%;
+        vertical-align: middle;
       }
     }
   }

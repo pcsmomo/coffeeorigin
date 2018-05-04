@@ -55,9 +55,11 @@ class Blend extends Component {
           <div className="flavorNotes">
             "Big, bold chocolates & caramels with toffee and cherry sweetness."
           </div>
-          <div className="use">blend for espresso</div>
+          <div className="use">
+            blend for <span className="flux">espresso</span>
+          </div>
           <div className="roastery">
-            by wide open road roastery
+            <span>by wide open road roastery</span>
             <img src="images/coffee/WOR_Logo.jpg" alt="" />
           </div>
         </div>
