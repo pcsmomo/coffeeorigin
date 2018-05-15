@@ -56,7 +56,7 @@ class Blend extends Component {
             "Big, bold chocolates & caramels with toffee and cherry sweetness."
           </div>
           <div className="use">
-            blend for <span className="flux">espresso</span>
+            blend for <span className="flux">espresso</span> with milk
           </div>
           <div className="roastery">
             <span>by wide open road roastery</span>
