@@ -40,7 +40,7 @@ class Origin extends Component {
 
   render() {
     return (
-      <div className="coffeeInfo scene weave">
+      <div className="coffeeInfo scene cicadaStripes">
         <div className="firstDiv">
           <h3 className="name">
             <img
