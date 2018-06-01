@@ -34,14 +34,15 @@ class List extends Component {
     return (
       <div id="list">
         {this.renderOrigins()}
-        <Picture file="imgCrew3.JPG" />
+        <Picture file="imgCrew04.jpg" />
         <Blend />
+        <Picture file="imgChaiLatte.jpg" />
         {this.renderOrigins()}
+        <Picture file="imgSpecial03.jpg" />
+        <Blend />
         <Picture file="imgBrew.JPG" />
-        <Blend />
-        <Picture file="imgOldBuilding.jpg" />
         {this.renderOrigins()}
-        <Picture file="imgBicycles.jpg" />
+        <Picture file="imgCrew03.JPG" />
         <Blend />
       </div>
     );
