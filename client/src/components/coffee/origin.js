@@ -55,11 +55,32 @@ class Origin extends Component {
         <div className="divider" />
         <div className="secondDiv">
           <div className="flavorNotes">"{this.props.origin.flavorNotes}"</div>
+          {this.props.origin.description ? (
+            <div className="description">{this.props.origin.description}</div>
+          ) : (
+            ""
+          )}
           <div className="use">
             single origin for{" "}
             <span className="neon">{this.props.origin.use}</span>
           </div>
-          <div className="process">{this.props.origin.process}</div>
+          {this.props.origin.variety ? (
+            <div className="variety">Variety: {this.props.origin.variety}</div>
+          ) : (
+            ""
+          )}
+          {this.props.origin.process ? (
+            <div className="process">Process: {this.props.origin.process}</div>
+          ) : (
+            ""
+          )}
+          {this.props.origin.altitude ? (
+            <div className="altitude">
+              Altitude: {this.props.origin.altitude}
+            </div>
+          ) : (
+            ""
+          )}
           <div className="roastery">
             <span>by {this.props.origin.roastery}</span>
             <img src="images/coffee/WOR_Logo.jpg" alt="" />

@@ -350,15 +350,18 @@
     align-self: center; }
   .coffeeInfo .secondDiv {
     display: grid;
-    grid-template-rows: 34% 22% 22% 22%;
     padding: 100px 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     text-align: left; }
     .coffeeInfo .secondDiv div {
-      padding: 30px 50px 0; }
+      padding: 0 50px;
+      margin-top: 30px; }
     .coffeeInfo .secondDiv .flavorNotes {
       text-align: center; }
+    .coffeeInfo .secondDiv .description {
+      font-size: 1.3rem;
+      text-transform: none; }
     .coffeeInfo .secondDiv .roastery img {
       width: 80px;
       margin-left: 10px;
