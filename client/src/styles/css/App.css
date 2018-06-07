@@ -270,13 +270,13 @@
     align-self: center; }
   .coffeeInfo .secondDiv {
     display: grid;
-    padding: 100px 0;
+    padding: 80px 0;
     font-size: 1.7rem;
     text-transform: capitalize;
     text-align: left; }
     .coffeeInfo .secondDiv div {
       padding: 0 50px;
-      margin-top: 30px; }
+      margin-top: 20px; }
     .coffeeInfo .secondDiv .flavorNotes {
       text-align: center; }
     .coffeeInfo .secondDiv .description {

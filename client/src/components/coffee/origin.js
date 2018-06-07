@@ -64,6 +64,11 @@ class Origin extends Component {
             single origin for{" "}
             <span className="neon">{this.props.origin.use}</span>
           </div>
+          {this.props.origin.region ? (
+            <div className="region">Region: {this.props.origin.region}</div>
+          ) : (
+            ""
+          )}
           {this.props.origin.variety ? (
             <div className="variety">Variety: {this.props.origin.variety}</div>
           ) : (
