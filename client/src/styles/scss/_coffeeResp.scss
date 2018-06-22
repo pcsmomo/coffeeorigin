@@ -1,0 +1,80 @@
+.coffeeInfoResp {
+  display: grid;
+  grid-template-columns: 45% 1% 54%;
+  text-align: center;
+  font-family: "Lucida Bright", serif;
+  text-shadow: 3px 3px 2px rgba(120, 120, 120, 1);
+
+  .firstDiv {
+    display: block;
+    padding: 20px;
+    height: inherit;
+
+    .name {
+      align-self: center;
+      font-size: 2rem;
+
+      span {
+        font-size: 1.6rem;
+      }
+
+      img {
+        margin: 0 7px;
+      }
+
+      .imgFlag {
+        width: 38px;
+      }
+
+      #imgShady01 {
+        height: 0.8em;
+      }
+
+      #imgShady02 {
+        height: 0.8em;
+      }
+    }
+    .map {
+      min-width: 375px;
+      max-width: 400px;
+      min-height: 375px;
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+
+  .divider {
+    width: 5px;
+    height: 80%;
+    background-color: black;
+    align-self: center;
+  }
+
+  .secondDiv {
+    display: grid;
+    // grid-template-rows: 34% 22% 22% 22%;
+    padding: 80px 0;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: left;
+    div {
+      padding: 0 50px;
+      margin-top: 20px;
+    }
+    .flavorNotes {
+      text-align: center;
+    }
+    .description {
+      font-size: 1.3rem;
+      text-transform: none;
+    }
+    .roastery {
+      img {
+        width: 80px;
+        margin-left: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

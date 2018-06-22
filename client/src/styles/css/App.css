@@ -288,6 +288,60 @@
       border-radius: 50%;
       vertical-align: middle; }
 
+.coffeeInfoResp {
+  display: grid;
+  grid-template-columns: 45% 1% 54%;
+  text-align: center;
+  font-family: "Lucida Bright", serif;
+  text-shadow: 3px 3px 2px #787878; }
+  .coffeeInfoResp .firstDiv {
+    display: block;
+    padding: 20px;
+    height: inherit; }
+    .coffeeInfoResp .firstDiv .name {
+      align-self: center;
+      font-size: 2rem; }
+      .coffeeInfoResp .firstDiv .name span {
+        font-size: 1.6rem; }
+      .coffeeInfoResp .firstDiv .name img {
+        margin: 0 7px; }
+      .coffeeInfoResp .firstDiv .name .imgFlag {
+        width: 38px; }
+      .coffeeInfoResp .firstDiv .name #imgShady01 {
+        height: 0.8em; }
+      .coffeeInfoResp .firstDiv .name #imgShady02 {
+        height: 0.8em; }
+    .coffeeInfoResp .firstDiv .map {
+      min-width: 375px;
+      max-width: 400px;
+      min-height: 375px;
+      height: 400px;
+      overflow: hidden; }
+  .coffeeInfoResp .divider {
+    width: 5px;
+    height: 80%;
+    background-color: black;
+    align-self: center; }
+  .coffeeInfoResp .secondDiv {
+    display: grid;
+    padding: 80px 0;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: left; }
+    .coffeeInfoResp .secondDiv div {
+      padding: 0 50px;
+      margin-top: 20px; }
+    .coffeeInfoResp .secondDiv .flavorNotes {
+      text-align: center; }
+    .coffeeInfoResp .secondDiv .description {
+      font-size: 1.3rem;
+      text-transform: none; }
+    .coffeeInfoResp .secondDiv .roastery img {
+      width: 80px;
+      margin-left: 10px;
+      border-radius: 50%;
+      vertical-align: middle; }
+
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf); }
