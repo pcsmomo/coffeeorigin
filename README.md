@@ -1,27 +1,21 @@
-cd /Users/momo/Documents/Study/reactjs/prj/coffeeorigin
-mongod
-npm dev run
+# Coffee Origin
+
+This is a slide application which shows **information of coffee beans** currently using at the cafe.
 
 
-npm init
-Enter Enter Enter Enter ...
+# What skills have been used
 
-npm install --save express
+- javascript
+-- Node.js
+-- Reactjs
+-- jvectormap (to mark countries on the worldmap)
+- css
+-- SCSS
+- MongoDB
+- git
+- Heroku
 
-heroku -v
-heroku login (pcsmomo@gmail.com)
-heroku apps:create jethrocoffeeorigin
-git remote add heroku https://git.heroku.com/jethrocoffeeorigin.git
--> fatal: remote heroku already exists.
-git push heroku master
 
-npm install --save nodemon
-npm install --save mongoose
+# Link
 
-//npm install -g create-react-app
-create-react-app client
-
-npm install --save concurrently
-
-// setup mongodb on local
-https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+http://jethrocoffeeorigin.herokuapp.com/show
